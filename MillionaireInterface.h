@@ -6,14 +6,18 @@ functions as well as mainly
 the classes that store them
 *************************** */
 #include <iostream>
-#include <Windows.h>
-#include <MMSystem.h>
-#include <iomanip>
-#pragma comment(lib, "winmm.lib")
 #include <stdlib.h>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <Windows.h>
 using namespace std;
-
 const int SIZEN = 100;
+/* **********************************
+Class Million includes all of the 
+functions that output the the words 
+and get the inputs
+********************************** */
 class million {
 	public:
 		million();
@@ -31,6 +35,11 @@ class million {
 		bool fifty, call, ask, right, leave;
 		char choice;
 };
+/* *************************************
+Class player calls the functions for the 
+million class and includes a pointer to 
+the million class
+************************************* */
 class player {
 	public:
 		player();
@@ -52,4 +61,5 @@ class player {
 		char *first;
 		million *millionptr;
 };
+
 
