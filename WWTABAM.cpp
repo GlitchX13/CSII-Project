@@ -12,6 +12,10 @@ int main() {
 	//create variable for class functions
 	player myPlayer;
 
+	//add color to environment
+	system("color 9f");
+	system("cls");
+
 	do {
 		//Step 1: Get The Player's Name
 		system("cls");
